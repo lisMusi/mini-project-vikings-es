@@ -28,7 +28,7 @@ class Viking(Soldier):
 
     def battleCry(self):
         # your code here
-        return "Odin Owns You All!"
+        return f"Odin Owns You All!"
 
     def receiveDamage(self, damage):
         # your code here
@@ -51,7 +51,7 @@ class Saxon(Soldier):
         if self.health > 0:
           return f"A Saxon has received {damage} points of damage"
         else:
-          return "A Saxon has died in combat"
+          return f"A Saxon has died in combat"
 
 # WAR
 
@@ -94,11 +94,11 @@ class War():
     def showStatus(self):
         # your code here
         if not self.saxonArmy: # Si no quedan sajones
-          return "Vikings have won the war of the century!"
+          return f"Vikings have won the war of the century!"
         elif not self.vikingArmy: # Si no quedan vikingos
-          return "Saxons have fought for their lives and survived another day..."
+          return f"Saxons have fought for their lives and survived another day..."
         else: # Si aun quedan ambos
-          return "Vikings and Saxons are still in the thick of battle."
+          return f"Vikings and Saxons are still in the thick of battle."
             
     pass
 
